@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Make A Choice: CS vs IT</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        nav {
+            background: #333;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        #about {
+            display: none; /* hidden by default */
+            padding: 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>MAKE A CHOICE</h1>
+        <p>Explore the Differences Between Computer Science and Information Technology</p>
+    </div>
+
+    <!-- ✅ Navigation -->
+    <nav>
+        <a href="#" onclick="showHome()">Home</a>
+        <a href="#" onclick="showAbout()">About</a>
+    </nav>
+
+    <!-- ✅ Homepage Content -->
+    <div id="home">
+        <div class="container">
+            <table class="main-table">
+                <tr>
+                    <th>
+                        Computer Science (CS) focuses on the theoretical and algorithmic foundations of computing, emphasizing the design, development, and creation of new software and computational systems.
+                    </th>
+                    <th>
+                        Information Technology (IT) concentrates on the practical application, management, and maintenance of existing computer systems and networks to support organizational needs.
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        Computer Science is centered on the design, theory, and development of software and algorithms. Key topics include:
+                        <ul>
+                            <li><b>Algorithms and Data Structures</b></li>
+                            <li><b>Software Engineering</b></li>
+                            <li><b>Artificial Intelligence</b></li>
+                            <li><b>Cybersecurity</b></li>
+                            <li><b>Operating Systems</b></li>
+                        </ul>
+                    </td>
+                    <td>
+                        Information Technology focuses on managing and maintaining computer systems, networks, and databases. Key topics include:
+                        <ul>
+                            <li><b>Database Management</b></li>
+                            <li><b>Networking and Security</b></li>
+                            <li><b>System Administration</b></li>
+                            <li><b>Cloud Computing</b></li>
+                            <li><b>Technical Support</b></li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+
+            <div class="section-title">CS vs IT: Comparison Table</div>
+            <table class="comp-table">
+                <tr>
+                    <th>Aspect</th>
+                    <th>Computer Science</th>
+                    <th>Information Technology</th>
+                </tr>
+                <tr>
+                    <td>Primary Focus</td>
+                    <td><b>Theory, Algorithms, Programming</b></td>
+                    <td><b>Systems, Networks, Application</b></td>
+                </tr>
+                <tr>
+                    <td>Careers</td>
+                    <td><b>Software Developer, Data Scientist</b></td>
+                    <td><b>IT Administrator, Network Engineer</b></td>
+                </tr>
+                <tr>
+                    <td>Core Skills</td>
+                    <td><b>Coding, Problem Solving</b></td>
+                    <td><b>Networking, IT Support</b></td>
+                </tr>
+                <tr>
+                    <td>Tools</td>
+                    <td><b>Python, Java, Git, IDEs</b></td>
+                    <td><b>Linux, Cisco, SQL, Azure</b></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <!-- ✅ About Section -->
+    <div id="about">
+        <h2>About</h2>
+        <p><b>Make A Choice</b> is an informative platform built with the purpose of clarifying the important distinctions between Computer Science (CS) and Information Technology (IT), two closely related yet fundamentally different areas within the technology industry.</p>
+        <p>Computer Science focuses on the theoretical foundations, programming, development of algorithms, and new software creation. It is a discipline driven by innovation, problem-solving, and deep technical understanding of computing principles. Careers in CS often include software development, data science, artificial intelligence research, and more.</p>
+        <p>In contrast, Information Technology deals primarily with the practical implementation, management, and maintenance of computer systems and networks that support business and organizational operations. IT professionals work in roles like system administration, network engineering, technical support, and cloud infrastructure management.</p>
+        <p>This website acts as an educational guide that presents clear and concise comparisons, including core subject areas, skills, career opportunities, and common tools used in both fields. It aims to assist students, professionals considering a career switch, and educators in making well-informed decisions tailored to individual interests and industry demands.</p>
+        <p>By bridging knowledge gaps and highlighting the unique aspects of CS and IT, <b>Make A Choice</b> supports a more informed and confident approach to studying or working in these critical technology domains.</p>
+    </div>
+
+    <div class="footer">
+        &copy; 2025 | CS vs IT Courses | Designed by Alaissa Kim Ebuen
+    </div>
+
+    <!-- ✅ JavaScript Toggle -->
+    <script>
+        function showHome() {
+            document.getElementById("home").style.display = "block";
+            document.getElementById("about").style.display = "none";
+        }
+        function showAbout() {
+            document.getElementById("home").style.display = "none";
+            document.getElementById("about").style.display = "block";
+        }
+    </script>
+</body>
+</html>
